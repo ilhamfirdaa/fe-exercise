@@ -4,4 +4,4 @@ After cloning repository, you can open index.html file in the root directory to 
 
 ## Netlify
 
-Or you can see on [netlify](https://fe-exercise-ilhamfirdaa.netlify.com)
+Or you can see live on [netlify](https://fe-exercise-ilhamfirdaa.netlify.com)
