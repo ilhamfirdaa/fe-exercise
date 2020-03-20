@@ -25,7 +25,7 @@ body {
 
 /* style for hero shot panel */
 #hero-panel {
-  background-image: url('/images/work-desk__dustin-lee.jpg');
+  background-image: url('/assets/images/work-desk__dustin-lee.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
