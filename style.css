@@ -1,9 +1,13 @@
-body {
-  background-color: #e5e5e5;
+html {
+  font-size: 100%;
 }
 
-p {
-  margin-bottom: 0;
+@media screen and (max-width: 576px) {
+  html { font-size: 80%; }
+}
+
+body {
+  background-color: #e5e5e5;
 }
 
 /* style for notification panel */
@@ -22,7 +26,8 @@ p {
 /* style for hero shot panel */
 #hero-panel {
   background-image: url('/images/work-desk__dustin-lee.jpg');
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
@@ -80,9 +85,16 @@ p {
 
 .highlight-content {
   border: solid grey 1px;
-  margin: 16px;
   padding: 16px;
-  max-width: 30%;
+  padding-bottom: 0;
+  margin: 16px auto;
+  min-height: 200px;
+}
+
+@media (max-width: 576px) {
+  .highlight-content {
+    min-height: 150px;
+  }
 }
 
 /* style for footer */
@@ -91,4 +103,40 @@ p {
   color: white;
   text-align: center;
   padding: 40px;
+}
+
+/* style for newsletter */
+#newsletter-panel {
+  background-color: #007bc1;
+  color: white;
+  max-width: 640px;
+  padding: 24px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+#input-email {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+#btn-close {
+  float: right;
+  margin: -16px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+#btn-subscribe {
+  width: 100%;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  #btn-subscribe {
+    margin-top: 8px;
+  }
 }
